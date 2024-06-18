@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.set("strictQuery",true);
-mongoose.connect("mongodb+srv://srihithas07:deanwinchester67@relish.7fgtyuz.mongodb.net/");
+mongoose.connect("mongodb+srv://booking:book256@reserv.rstvcwb.mongodb.net/bookingdb");
 var db = mongoose.connection;
 db.on("open",()=>console.log("Connected to db"));
 db.on("error",()=>console.log("Error occurred"));
